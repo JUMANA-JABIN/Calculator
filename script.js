@@ -1,4 +1,8 @@
-function clearScreen() {
+function appendCharacter(char) {
+    document.getElementById('result').value += char;
+}
+
+function clearDisplay() {
     document.getElementById('result').value = '';
 }
 
@@ -7,15 +11,11 @@ function deleteLast() {
     document.getElementById('result').value = result.slice(0, -1);
 }
 
-function insert(char) {
-    document.getElementById('result').value += char;
-}
-
-function calculate() {
+function calculateResult() {
     let result = document.getElementById('result').value;
     try {
         document.getElementById('result').value = eval(result);
-    } catch (e) {
+    } catch (error) {
         document.getElementById('result').value = 'Error';
     }
 }

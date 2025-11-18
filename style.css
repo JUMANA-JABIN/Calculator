@@ -36,13 +36,13 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
-button {
+.buttons button {
     border: 1px solid #ccc;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-button:hover {
+.buttons button:hover {
     background-color: #ddd;
 }
